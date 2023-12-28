@@ -27,6 +27,7 @@ extern IggBool iggBeginCombo(char const *label, char const *previewValue, int fl
 extern void iggEndCombo(void);
 extern IggBool iggCombo(char const *label, int *currentItem, char const *itemsSeparatedByZeros, int heightInItems);
 
+extern IggBool iggInputFloat(char const *label, float *value, float step, float step_fast, const char *format, int flags);
 extern IggBool iggDragFloat(char const *label, float *value, float speed, float min, float max, char const *format, int flags);
 extern IggBool iggDragFloatN(char const *label, float *value, int n, float speed, float min, float max, char const *format, int flags);
 extern IggBool iggDragFloatRange2V(char const *label, float *currentMin, float *currentMax, float speed, float min, float max, char const *format, const char *formatMax, int flags);

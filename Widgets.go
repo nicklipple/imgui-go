@@ -408,6 +408,16 @@ func DragIntRange2(label string, currentMin *int32, currentMax *int32) bool {
 	return DragIntRange2V(label, currentMin, currentMax, 1, 0, 0, "%d", "%d", SliderFlagsNone)
 }
 
+func InputFloat(label string, value *float32, step float32, stepfast float32, format string, flags int) bool {
+	labelArg, labelFin := wrapString(label)
+	defer labelFin()
+	valueArg, valueFin := wrapFloat(value)
+	defer valueFin()
+	formatArg, formatFin := wrapString(format)
+	defer formatFin()
+	return C.iggInputFloat(labelArg, valueArg, C.float(step), C.float(stepfast), formatArg, C.int(flags)) != 0
+}
+
 // SliderFloatV creates a slider for floats.
 func SliderFloatV(label string, value *float32, min, max float32, format string, flags SliderFlags) bool {
 	labelArg, labelFin := wrapString(label)
