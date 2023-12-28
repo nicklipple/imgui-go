@@ -1,8 +1,8 @@
 # Dear ImGui for Go
 
-[![Go Doc](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/inkyblackness/imgui-go/v2)
-[![Go Report Card](https://goreportcard.com/badge/github.com/inkyblackness/imgui-go)](https://goreportcard.com/report/github.com/inkyblackness/imgui-go)
-[![Lint Status](https://github.com/inkyblackness/imgui-go/workflows/golangci-lint/badge.svg)](https://github.com/inkyblackness/imgui-go/actions)
+[![Go Doc](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/nicklipple/imgui-go/v2)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nicklipple/imgui-go)](https://goreportcard.com/report/github.com/nicklipple/imgui-go)
+[![Lint Status](https://github.com/nicklipple/imgui-go/workflows/golangci-lint/badge.svg)](https://github.com/nicklipple/imgui-go/actions)
 
 ## Discontinued
 **This repository is no longer maintained as per 2022-12-31.
@@ -57,7 +57,7 @@ At the moment, this library uses version [1.85](https://github.com/ocornut/imgui
 
 ## Examples
 A separate repository was created to host ported examples and reference implementations.
-See repository [inkyblackness/imgui-go-examples](https://github.com/inkyblackness/imgui-go-examples).
+See repository [inkyblackness/imgui-go-examples](https://github.com/nicklipple/imgui-go-examples).
 
 It contains reference implementations for libraries such as [GLFW3](https://github.com/go-gl/glfw) and [SDL2](https://github.com/veandco/go-sdl2), using [OpenGL](https://github.com/go-gl/gl).
 

@@ -18,7 +18,7 @@ type Context struct {
 // CreateContext produces a new internal state scope.
 // Passing nil for the fontAtlas creates a default font.
 //
-// Deprecated: Unmaintained wrapper. Use an alternative; see README of https://github.com/inkyblackness/imgui-go .
+// Deprecated: Unmaintained wrapper. Use an alternative; see README of https://github.com/nicklipple/imgui-go .
 func CreateContext(fontAtlas *FontAtlas) *Context {
 	var fontAtlasPtr C.IggFontAtlas
 	if fontAtlas != nil {
